@@ -17,7 +17,7 @@ describe('Home Controller', function() {
     expect(controller).not.to.equal(null);
   });
   it('test', function() {
-    expect(controller.greeting).to.equal('Hello Codesmith!');
+    expect(controller.greeting).to.equal('Hello codesmith!');
   });
   it('has an array to hold contacts', function() {
     expect(controller.contacts).to.be.a('array');
