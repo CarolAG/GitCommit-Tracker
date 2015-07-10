@@ -4,6 +4,7 @@ var browserify = require('browserify');
 var watchify = require('watchify');
 var http = require('http');
 var ecstatic = require('ecstatic');
+var p = require('partialify');
 
 // define tasks here
 gulp.task('default', function(){
@@ -17,6 +18,7 @@ gulp.task('default', function(){
     debug: true,
     cache: {},
     packageCache: {},
+      transform: p,
     fullPaths: true
   });
   var watcher = watchify(bundler);
