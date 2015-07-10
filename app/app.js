@@ -20,7 +20,7 @@ function configFunction($routeProvider, $locationProvider) {
   $routeProvider
     .when('/Home/', {
       // the template to load
-      templateUrl: 'partials/home.html',
+      template: require('./partials/home.html'),
       // what controller to use, and what it should be new'd up as
       controller: 'HomeController as homeCtrl'
     });
@@ -29,5 +29,7 @@ function configFunction($routeProvider, $locationProvider) {
 angular
   .module('myApp')
   .controller('HomeController', require('./controllers/homeController.js'));
+
+module.exports = angular;
 
 
