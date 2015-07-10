@@ -1,0 +1,22 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Arrays</title>
+  <link rel="stylesheet" href="test/lib/mocha/mocha.css" />
+</head>
+<script src="test/lib/scroll.js"></script>
+<body onload="loadScroll()" onunload="saveScroll()">
+  <div id="mocha"></div>
+  <!-- <script src="test/lib/jquery/dist/jquery.js"></script> -->
+  <script src="test/lib/mocha/mocha.js"></script>
+  <script>mocha.setup('bdd')</script>
+  <script src="test/lib/expect/index.js"></script>
+  <script src="client/bundle.js"></script>
+  <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+  <script src="test/ngSpec.js"></script>
+  <script>
+    mocha.globals();
+    mocha.run();
+  </script>
+</body>
+</html>
