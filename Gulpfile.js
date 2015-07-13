@@ -18,7 +18,7 @@ gulp.task('default', function(){
     debug: true,
     cache: {},
     packageCache: {},
-      transform: p,
+    transform: p,
     fullPaths: true
   });
   var watcher = watchify(bundler);
