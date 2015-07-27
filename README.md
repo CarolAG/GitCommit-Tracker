@@ -19,9 +19,10 @@ Electives:
 # Running the code!
 
 * `npm install` to install all the dependencies
-* I have tests built for this! open up the `test.html` page to see the results of the test.
+* `bower install` to install other dependencies
 * `gulp`
 * open your browser to `localhost:8080`
+* I have tests built for this! open up the `test.html` page to see the results of the test.
 
 
 #Keep all your angular code in the `app/` folder, remember we've got browserify running
