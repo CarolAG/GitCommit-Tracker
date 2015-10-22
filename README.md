@@ -20,7 +20,7 @@ Electives:
 
 * `npm install` to install all the dependencies
 * `bower install` to install other dependencies
-* `gulp`
+* `npm start`
 * open your browser to `localhost:8080`
 * I have tests built for this! Open up the `test.html` page to see the results of the test.
 
