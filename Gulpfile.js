@@ -12,7 +12,7 @@ gulp.task('default', function(){
     ecstatic({ root: __dirname + '/client' })
   ).listen(8080);
 
-  console.log('Listening on :8080');
+  console.log('Listening on http://localhost:8080');
   var bundler = browserify({
     entries: ['./app/app.js'],
     debug: true,
