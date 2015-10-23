@@ -1,4 +1,6 @@
-# Contact Book!
+# Angular
+
+##Summary
 
 We're going to be building an address book application using angular å la google contacts.
 You should see a list of contacts with their first and last names, phone numbers and emails.
@@ -15,11 +17,18 @@ This is going to involve a few key steps.
 Electives:
 * **angular-material** is installed in the `package.json` and the stylesheet is loaded, do a little research on the different directives it gives you and try to use some of them
 
+##Learning Goals
 
-# Running the code!
+###What is Angular
+
+##Getting started
+
+###Setup
 
 * `npm install` to install all the dependencies
 * `bower install` to install other dependencies
+
+
 * `gulp`
 * open your browser to `localhost:8080`
 * I have tests built for this! open up the `test.html` page to see the results of the test.
