@@ -1,16 +1,22 @@
 /* eslint-env mocha, jasmine, browser, es6 */
-describe('Home Controller', function() {
 
+console.log('tests staarted');
+console.log(describe);
+
+describe('Home Controller', function() {
   beforeEach(function() {
+    console.log('before');
     angular.mock.module('myApp');
   });
   beforeEach(inject(function ($controller, $rootScope) {
+    console.log('beforeEah');
     $scope = $rootScope.$new();
     controller = $controller('HomeController', {
       $scope: $scope
     });
   }));
   it('should be registered', inject(function($rootScope, $controller) {
+    console.log('first one');
     expect(controller).to.not.be.undefined;
   }));
   it('should have a homecontroller', function() {

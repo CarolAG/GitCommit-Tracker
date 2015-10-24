@@ -1,0 +1,26 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Angular</title>
+  <link rel="stylesheet" href="lib/mocha/mocha.css" />
+</head>
+<script type="text/javascript" src="./../client/lib/angular/angular.min.js"></script>
+<script type="text/javascript" src="./../client/lib/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="./../client/controllers/homeController.js"></script>
+
+<script type="text/javascript" src="./../client/app.js"></script>
+
+<script src="lib/expect/index.js"></script>
+<script src="lib/mocha/mocha.js"></script>
+<script>mocha.setup('bdd')</script>
+<script type="text/javascript" src="./../client/lib/angular-mocks/angular-mocks.js"></script>
+<script src="ngSpec.js"></script>
+<body>
+  <div id="mocha"></div>
+
+</body>
+<script>
+  mocha.run();
+</script>
+
+</html>
