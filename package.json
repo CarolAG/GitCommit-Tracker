@@ -4,13 +4,8 @@
   "description": "Angular Skills Builder Codesmith.io",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
     "start": "node server.js",
     "test": "./node_modules/mocha-phantomjs/bin/mocha-phantomjs ./test/test.html"
-=======
-    "start": "node_modules/.bin/gulp",
-    "test": "echo \"Error: no test specified\" && exit 1"
->>>>>>> e0b7c925c909ca63029e2f00bedffc5c90520909
   },
   "author": "",
   "license": "ISC",
