@@ -9,7 +9,7 @@ var app = angular
 //
 // NOTE: we do not redeclare our external dependencies, we only need to do this once
 app.config(configFunction);
-console.log('there');
+
 // we $inject any dependencies that that function will need
 // configFunction.$inject = ['$routeProvider', '$locationProvider'];
 
