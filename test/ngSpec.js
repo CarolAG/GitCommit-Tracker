@@ -1,6 +1,6 @@
 describe('Angular Spec', function() {
   var HomeController;
-  var AuthController;
+  var AboutController;
   var controller;
 
   describe('Controller', function() {
@@ -31,14 +31,26 @@ describe('Angular Spec', function() {
 
   describe('Adding Views', function() {
 
+    beforeEach(function() {
+      module('Codesmith.AboutController');
+    });
+
     beforeEach(inject(function ($controller) {
       controller = $controller;
     }));
 
-    it('AboutController should be created', function() {
+    it('AboutController controller should be created', function() {
       var $scope = {};
-      expect(controller).withArgs('AuthController', {$scope: $scope}).to.not.throwException();
+      expect(controller).withArgs('AboutController', {$scope: $scope}).to.not.throwException();
     });
+
+    it('AboutController should have "name" property', function() {
+      var $scope = {};
+      AboutController = controller('AboutController', { $scope: $scope });
+      expect($scope.name).to.be.a('string');
+      expect($scope.name).to.be.truthy;
+    });
+
   });
 
   // PENDING

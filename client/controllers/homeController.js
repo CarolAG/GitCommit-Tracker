@@ -4,6 +4,8 @@ var app = angular
 
 
 function HomeController($scope) {
-  console.log(UserFactory);
   $scope.unit = "Unit 10 Prototype";
+
+  // to remove
+  $scope.name = 'name'
 }
