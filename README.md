@@ -48,13 +48,13 @@ localhost:3000
 - [ ] Type into the input field. If done correctly, the input should be rendered alongside the input field
 
 ###Factories
-- [ ] Create a separate module named ```Codesmith.UserFactory``` (place inside ```./client/controllers/aboutController.js```)
+- [ ] Create a separate module named ```Codesmith.UserFactory``` (place inside ```./client/factories/userFactory.js```)
 - [ ] Create a factory named ```UserFactory``` inside the ```Codesmith.UserFactory``` module
 - [ ] Inject ```UserFactory``` inside ```AboutController```
 - [ ] Add a ```ng-click``` directive to the <button> on the ```about.html``` partial
 - [ ] Add a function in ```AboutController``` that, when clicked, stores the ```name``` inside the ```UserFactory``` object.
 - [ ] Inject ```UserFactory``` inside ```HomeController```
-- [ ] Have the ```HomeController``` name property equal to the ```UserFactory``` name such that names saved in the ```/about``` page is displayed
+- [ ] Have the ```HomeController``` name property equal to the ```UserFactory``` name such that ```name``` saved in the ```/about``` page is displayed
 
 ###HTTP
 - [ ] Inside the ```HomeController```, create a method called ```getMessages``` that makes a GET request to the following URI
@@ -65,8 +65,9 @@ http://slack-server.elasticbeanstalk.com/messages
 - [ ] Use the ```ng-repeat``` directive to display all the messages in the ```home``` partial
 
 ###Extension Challenges
+- [ ] Add an <input> tag to the ```home.html``` partial. Add the necessary directives such that, when clicked, a message is sent to the messaging server
 - [ ] Replace with ngRoute with [ui-router](https://github.com/angular-ui/ui-router).
-- [ ] Connect to your own custom API instead of the URI provided above.
+- [ ] Connect to your own custom API instead of the URI provided above
 
 ##Additional Links and Resources
 - [https://github.com/johnpapa/angular-styleguide](https://github.com/johnpapa/angular-styleguide)
