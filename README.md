@@ -21,21 +21,42 @@ Electives:
 
 ###What is Angular
 
+
 ##Getting started
 
 ###Setup
 
 * `npm install` to install all the dependencies
 * `bower install` to install other dependencies
-<<<<<<< HEAD
-
-
-* `gulp`
-=======
 * `npm start`
->>>>>>> e0b7c925c909ca63029e2f00bedffc5c90520909
-* open your browser to `localhost:8080`
-* I have tests built for this! Open up the `test.html` page to see the results of the test.
+* open your browser to
+````
+localhost:8080
+````
+
+###Testing
+Run the following line to test your code
+````
+npm test
+````
+
+###Controllers
+- [ ] Modify the ```HomeController``` have a ```name``` property. Have the ```name``` property equal to your name
+- [ ] Modify the ```home``` partial to display the value set to the ```name``` property
+
+###Adding Views
+- [ ] Create another route at ```/about``` that displays the ```about``` partial.
+- [ ] Create another module named ```Codesmith.AboutController``` (place inside ```./client/controllers/aboutController.js```) and add a controller named ```AboutController``` to it
+- [ ] Add the directive ```ng-model``` to the input tag. Set the value of the directive to ```name```
+- [ ] Modify the ```about``` partial to display the name property
+
+###Factories
+- [ ] Create a separate module called ```Codesmith.UserFactory``` and add a factory called ```UserFactory```
+- [ ] Add a ```ng-click``` directive to the button on the ```about``` partial
+- [ ] Add a function in ```AboutController``` that, when clicked, stores the name inside the ```UserFactory``` object. You will need to inject ```UserFactory``` inside ```AboutControlller```
+- [ ] Inject ```UserFactory``` inside the ```HomeController```
+- [ ] Have the ```HomeController``` name property equal to the ```UserFactory``` name such that names saved in the ```/about``` page is displayed
 
 
-#Keep all your angular code in the `app/` folder and remember that we've got browserify running
+##Additional Links and Resources
+- [https://github.com/johnpapa/angular-styleguide](https://github.com/johnpapa/angular-styleguide)

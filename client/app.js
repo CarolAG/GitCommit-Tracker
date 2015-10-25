@@ -3,6 +3,8 @@ var app = angular
   .module('myApp',[
     'ngRoute',
     'Codesmith.HomeController',
+    // 'Codesmith.AboutController',
+    // 'Codesmith.Users'
     ]);
 
 // we pass in a function that handles our routes and config to the config function on that same angular module 'myApp' that we created above
@@ -16,12 +18,15 @@ app.config(configFunction);
 // make sure these arguments are ordered the same as the ones in your $inject
 function configFunction($routeProvider, $locationProvider) {
 
-  // we define different routes on our route provider by passing in a url it should respond to, and an object of options
   $routeProvider
-    .when('/Home/', {
-      // the template to load
+    .when('/', {
       templateUrl: './partials/home.html',
       controller: 'HomeController'
+    })
+    // to remove
+    .when('/about', {
+      templateUrl: './partials/about.html',
+      controller: 'AboutController'
     });
 }
 
