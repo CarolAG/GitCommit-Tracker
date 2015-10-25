@@ -4,7 +4,7 @@ var app = angular
     'ngRoute',
     'Codesmith.HomeController',
     // 'Codesmith.AboutController',
-    // 'Codesmith.Users'
+    'Codesmith.Users'
     ])
   .controller('test', function($scope) {
   });
@@ -27,7 +27,7 @@ function configFunction($routeProvider, $locationProvider) {
     })
     // to remove
     .when('/about', {
-      // templateUrl: './partials/about.html',
+      templateUrl: './partials/about.html',
       controller: 'AboutController'
     });
 }

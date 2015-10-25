@@ -1,5 +1,5 @@
 var app = angular
-  .module('Codesmith.HomeController',[])
+  .module('Codesmith.HomeController',['ngRoute','Codesmith.Users'])
   .controller('HomeController', HomeController)
 
 
