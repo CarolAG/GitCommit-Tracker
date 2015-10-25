@@ -9,8 +9,7 @@ var app = angular
   .controller('AboutController', AboutController);
 
 function AboutController($scope) {
-  $scope.unit = "Unit 10 Prototype";
-  console.log(UserFactory);
+
 }
 
 

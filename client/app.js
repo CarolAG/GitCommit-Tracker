@@ -4,7 +4,7 @@ var app = angular
     'ngRoute',
     'Codesmith.HomeController',
     // 'Codesmith.AboutController',
-    'Codesmith.Users'
+    // 'Codesmith.Users'
     ])
   .controller('test', function($scope) {
   });
