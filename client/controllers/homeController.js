@@ -5,7 +5,4 @@ var app = angular
 
 function HomeController($scope) {
   $scope.unit = "Unit 10 Prototype";
-
-  // to remove
-  $scope.name = 'name'
 }
