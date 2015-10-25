@@ -5,11 +5,16 @@ console.log(describe);
 
 describe('Angular Spec', function() {
   beforeEach(function() {
+    console.log(angular.mock);
+    console.log(angular.mock.module);
+
     angular.mock.module('myApp');
   });
 
   describe('Controller', function() {
+    console.log(inject);
     beforeEach(inject(function ($controller, $rootScope) {
+      console.log('helo');
       $scope = $rootScope.$new();
       controller = $controller('HomeController', {
         $scope: $scope

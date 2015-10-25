@@ -21,12 +21,11 @@ function configFunction($routeProvider, $locationProvider) {
   $routeProvider
     .when('/', {
       // templateUrl: './partials/home.html',
-      templateUrl: '/tpl.html',
       controller: 'HomeController'
     })
     // to remove
     .when('/about', {
-      templateUrl: './partials/about.html',
+      // templateUrl: './partials/about.html',
       controller: 'AboutController'
     });
 }
