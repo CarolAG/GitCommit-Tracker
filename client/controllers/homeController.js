@@ -1,13 +1,8 @@
 var app = angular
-  .module('Codesmith.HomeController',['ngRoute','Codesmith.Users'])
-  .controller('HomeController', ['$scope', 'UserFactory', HomeController])
+  .module('Codesmith.HomeController',[])
+  .controller('HomeController', HomeController)
 
 
-function HomeController($scope, UserFactory) {
-  console.log(arguments);
+function HomeController($scope) {
   $scope.unit = "Unit 10 Prototype";
-  console.log('instatiated');
-  // console.log(Factory);
-  console.log(UserFactory);
-  $scope.name = UserFactory.name;
 }

@@ -1,39 +1,43 @@
-/* eslint-env mocha, jasmine, browser, es6 */
-
-console.log('tests staarted');
-console.log(describe);
-
 describe('Angular Spec', function() {
+  var HomeController;
+  var AuthController;
+  var controller;
   beforeEach(function() {
-    console.log(angular.mock);
-    console.log(angular.mock.module);
-
-    angular.mock.module('myApp');
+    module('myApp');
   });
 
+  beforeEach(inject(function ($controller) {
+    controller = $controller;
+  }));
+
   describe('Controller', function() {
-    console.log(inject);
-    beforeEach(inject(function ($controller, $rootScope) {
-      console.log('helo');
-      $scope = $rootScope.$new();
-      controller = $controller('HomeController', {
-        $scope: $scope
-      });
-    }));
-
-
-    it('HomeController should have "name" property', function() {
-      expect(controller.name).to.be.truthy;
+    it('HomeController should have "unit" property', function() {
+      var $scope = {};
+      HomeController = controller('HomeController', { $scope: $scope });
+      expect($scope.unit).to.be.a('string');
+      expect($scope.unit).to.be.truthy;
     });
+
+    xit('HomeController should have "name" property', function() {
+      var $scope = {};
+      HomeController = controller('HomeController', { $scope: $scope });
+      expect($scope.name).to.be.a('string');
+      expect($scope.name).to.be.truthy;
+    });
+
   });
 
   describe('Adding Views', function() {
-    // body...
+    it('AboutController should be created', function() {
+      var $scope = {};
+      expect(controller).withArgs('AuthController', {$scope: $scope}).to.not.throwException();
+    });
   });
 
   describe('Factories',function() {
 
   });
+
   xit('should be registered', inject(function($rootScope, $controller) {
     console.log('first one');
     expect(controller).to.not.be.undefined;
