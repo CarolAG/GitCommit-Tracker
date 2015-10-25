@@ -41,7 +41,7 @@ npm test
 ````
 
 ###Controllers
-- [ ] Modify the ```HomeController``` have a ```name``` property. Have the ```name``` property equal to your name
+- [ ] Modify the ```HomeController``` scope have a ```name``` property. Have the ```name``` property equal to your name
 - [ ] Modify the ```home``` partial to display the value set to the ```name``` property
 
 ###Adding Views
@@ -56,6 +56,18 @@ npm test
 - [ ] Add a function in ```AboutController``` that, when clicked, stores the name inside the ```UserFactory``` object. You will need to inject ```UserFactory``` inside ```AboutControlller```
 - [ ] Inject ```UserFactory``` inside the ```HomeController```
 - [ ] Have the ```HomeController``` name property equal to the ```UserFactory``` name such that names saved in the ```/about``` page is displayed
+
+###HTTP
+- [ ] Inside the ```HomeController```, create a method called ```getMessages``` that makes a GET request to the following URI
+````
+http://slack-server.elasticbeanstalk.com/messages
+````
+- [ ] Store the array of messages inside the ```messages``` property of the ```HomeController``` scope
+- [ ] Use the ```ng-repeat``` directive to dynamically
+
+###Extension Challenges
+- [ ] Replace with ngRoute with [ui-router](https://github.com/angular-ui/ui-router).
+- [ ] Connect to your own custom API instead of the URI provided above.
 
 
 ##Additional Links and Resources

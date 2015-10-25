@@ -20,7 +20,8 @@ function configFunction($routeProvider, $locationProvider) {
 
   $routeProvider
     .when('/', {
-      templateUrl: './partials/home.html',
+      // templateUrl: './partials/home.html',
+      templateUrl: '/tpl.html',
       controller: 'HomeController'
     })
     // to remove

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "test": "./node_modules/mocha-phantomjs/bin/mocha-phantomjs ./test/test.html"
+    "test": "./node_modules/mocha-phantomjs/bin/mocha-phantomjs --web-security=false ./test/test.html"
   },
   "author": "",
   "license": "ISC",
