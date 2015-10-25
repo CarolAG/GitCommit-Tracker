@@ -77,6 +77,15 @@ describe('Angular Spec', function() {
       // expect($scope.name).to.be.truthy;
     });
 
+ });
+
+  describe('HTTP', function() {
+    it('HomeController should have "getMessages" method', function() {
+      var $scope = {};
+      HomeController = controller('HomeController', { $scope: $scope });
+      expect($scope.getMessages).to.be.a('function');
+      expect($scope.getMessages).to.be.truthy;
+    });
   });
 });
 
