@@ -2,7 +2,7 @@
 
 ##Summary
 
-In this unit you will be building a full MVC-style frontend website to display the content of your API. You will be using [Angular](https://angularjs.org/), a frontend framework maintained by Google, and still the [most popular](https://www.airpair.com/js/javascript-framework-comparison) framework for building web applications today.
+In this unit you will be building a full MVC-style frontend web application to display the content of your API. You will be using [Angular](https://angularjs.org/), a frontend framework maintained by Google, and still the [most popular](https://www.airpair.com/js/javascript-framework-comparison) framework for building web applications today.
 
 ##Learning Goals
 
@@ -25,11 +25,11 @@ Angular uses [two-way data binding](https://docs.angularjs.org/tutorial/step_04)
 
 'Controllers' [AngularJS Controller Tutorial](http://viralpatel.net/blogs/angularjs-controller-tutorial/) join the dots between the 'data' in the view (that the user interacts with) and data in the underlying 'model'
 
-We must write the models, views and controllers ourselves as developers - Angular gives us plenty of tools to do so as well as a structure it expects us to follow.
+We must write the models, views and controllers ([Angular docs - Controllers](https://docs.angularjs.org/guide/controller)) ourselves as developers - Angular gives us plenty of tools to do so as well as a structure it expects us to follow.
 
 ##Things to look out for
 
-* Angular documentation can be obscure, so ensure you balance interpreting the documentation with reading posts & tutorials by other developers
+* Angular documentation can be obscure, so ensure you balance interpreting the documentation with reading posts & tutorials by other developers - [Use AngularJS to Power Your Web Application](http://www.yearofmoo.com/2012/08/use-angularjs-to-power-your-web-application.html)
 
 ##Getting started
 
