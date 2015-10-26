@@ -30,6 +30,7 @@ We must write the models, views and controllers ([Angular docs - Controllers](ht
 ##Things to look out for
 
 * Angular documentation can be obscure, so ensure you balance interpreting the documentation with reading posts & tutorials by other developers - [Use AngularJS to Power Your Web Application](http://www.yearofmoo.com/2012/08/use-angularjs-to-power-your-web-application.html)
+* Forget about React's clear and helpful error messages - Angular's errors are a different beast. If you feel like your error message is unreadable, notice that each error message has a URL link at the top. Clicking the link takes you to a more detailed error page which is usually much more helpful than the message shown in console.
 
 ##Getting started
 
