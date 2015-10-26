@@ -2,7 +2,7 @@
 
 ##Summary
 
-In this unit you will be building a full MVC-style frontend website to display the content of your API. You will be using Angular, a frontend framework maintained by Google, and still the most popular framework for building web applications today.
+In this unit you will be building a full MVC-style frontend website to display the content of your API. You will be using [Angular](https://angularjs.org/), a frontend framework maintained by Google, and still the [most popular](https://www.airpair.com/js/javascript-framework-comparison) framework for building web applications today.
 
 ##Learning Goals
 
@@ -13,13 +13,13 @@ In this unit you will be building a full MVC-style frontend website to display t
 
 ###What is a framework?
 
-Developing modern frontend web applications requires us to manage complex patterns of data on the frontend. This data (for example, the number of favorites on a tweet, whether a button has been selected or not) constantly change as new information becomes available from the server or as users interact with the data. Frameworks give us the structure to more easily design applications that handle this complexity. 
+Developing modern frontend web applications requires us to manage complex patterns of data on the frontend. The data (for example, the number of favorites on a tweet, whether a button has been selected or not) constantly change as new information becomes available from the server or as users interact with the data. Frameworks give us the structure to more easily design applications that handle this complexity. 
 
 ###What is Angular?
 
-Angular is the currently the most popular frontend JavaScript framework using the Model-View-Controller pattern. 
+Angular is the currently the most popular frontend JavaScript framework using the Model-View-Controller pattern. [Coding Horror - Understanding MVC](http://blog.codinghorror.com/understanding-model-view-controller/)
 
-Angular uses two-way data binding to ensure that any data-related changes affecting the underlying data model immediately update the relevant view or views (the UI that the user interacts with). Any changes to the view (for example by a user) immediately updates the relevant data model. 
+Angular uses [two-way data binding](https://docs.angularjs.org/tutorial/step_04) to ensure that any data-related changes affecting the underlying data model immediately update the relevant view or views (the UI that the user interacts with). Any changes to the view (for example by a user) immediately updates the relevant data model. 
 
 ![](https://www.dropbox.com/s/lj2013fj1e8c213/Screenshot%202015-10-26%2008.09.55.png?dl=1)
 
