@@ -2,17 +2,34 @@
 
 ##Summary
 
-add stuff here
+In this unit you will be building a full MVC-style frontend website to display the content of your API. You will be using Angular, a frontend framework maintained by Google, and still the most popular framework for building web applications today.
 
 ##Learning Goals
 
-- 1
-- 2
-- 3
-- 4
+1. Understand how views, controllers and models interact in Angular
+2. Use factories to maintain data consistency across your application
+3. Use your own API to reinforce the value of API design
+4. Successfully make http requests in Angular
 
-###What is Angular
+###What is a framework?
 
+Developing modern frontend web applications requires us to manage complex patterns of data on the frontend. This data (for example, the number of favorites on a tweet, whether a button has been selected or not) constantly change as new information becomes available from the server or as users interact with the data. Frameworks give us the structure to more easily design applications that handle this complexity. 
+
+###What is Angular?
+
+Angular is the currently the most popular frontend JavaScript framework using the Model-View-Controller pattern. 
+
+Angular uses two-way data binding to ensure that any data-related changes affecting the underlying data model immediately update the relevant view or views (the UI that the user interacts with). Any changes to the view (for example by a user) immediately updates the relevant data model. 
+
+!()[https://www.dropbox.com/s/lj2013fj1e8c213/Screenshot%202015-10-26%2008.09.55.png?dl=1]
+
+'Controllers' [AngularJS Controller Tutorial](http://viralpatel.net/blogs/angularjs-controller-tutorial/) join the dots between the 'data' in the view (that the user interacts with) and data in the underlying 'model'
+
+We must write the models, views and controllers ourselves as developers - Angular gives us plenty of tools to do so as well as a structure it expects us to follow.
+
+##Things to look out for
+
+* Angular documentation can be obscure, so ensure you balance interpreting the documentation with reading posts & tutorials by other developers
 
 ##Getting started
 
