@@ -86,6 +86,8 @@ http://slack-server.elasticbeanstalk.com/messages
 - [ ] Add an <input> tag to the ```home.html``` partial. Add the necessary directives such that, when clicked, a message is sent to the messaging server
 - [ ] Replace with ngRoute with [ui-router](https://github.com/angular-ui/ui-router).
 - [ ] Connect to your own custom API instead of the URI provided above
+- [ ] Create an **element directive** for your custom API. This directive should allow any app to simply include a script tag and place a custom tag in the html and in order to display the data (styled).
+- [ ] Add a dropdown menu that enables the user to sort the data by different fields. Add a search bar that can show matching data.
 
 ##Additional Links and Resources
 - [https://github.com/johnpapa/angular-styleguide](https://github.com/johnpapa/angular-styleguide)
