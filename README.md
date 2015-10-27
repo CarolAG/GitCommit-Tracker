@@ -50,7 +50,7 @@ npm test
 ````
 - [ ] Additionally, open your browser the following address to view your application:
 ````
-localhost:3000
+http://localhost:3000/
 ````
 
 ###Controllers
