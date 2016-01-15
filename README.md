@@ -8,17 +8,17 @@ In this unit you will be building a full MVC-style frontend web application to d
 
 1. Understand how views, controllers and models interact in Angular.
 2. Use factories to maintain data consistency across your application.
-3. 
+3. Create a rich, dynamic messaging platform.
 4. Use your own API to reinforce the value of API design.
 5. Successfully make HTTP requests in Angular.
 
 ### What is a framework?
 
-Developing modern frontend web applications requires us to manage complex patterns of data on the frontend. The data (for example, the number of favorites on a tweet, whether a button has been selected or not) constantly change as new information becomes available from the server or as users interact with the data. Frameworks give us the structure to more easily design applications that handle this complexity. 
+Developing modern front-end web applications requires us to manage complex patterns of data on the front-end. The data (for example, the number of favorites on a tweet, whether a button has been selected or not) constantly change as new information becomes available from the server or as users interact with the data. Frameworks give us the structure to more easily design applications that handle this complexity. 
 
 ### What is Angular?
 
-Angular is the currently the most popular frontend JavaScript framework using the Model-View-Controller pattern. [Coding Horror - Understanding MVC](http://blog.codinghorror.com/understanding-model-view-controller/)
+Angular is the currently the most popular front-end JavaScript framework using the Model-View-Controller pattern. [Coding Horror - Understanding MVC](http://blog.codinghorror.com/understanding-model-view-controller/)
 
 Angular uses [two-way data binding](https://docs.angularjs.org/tutorial/step_04) to ensure that any data-related changes affecting the underlying data model immediately update the relevant view or views (the UI that the user interacts with). Any changes to the view (for example by a user) immediately updates the relevant data model. 
 
@@ -41,7 +41,7 @@ We must write the models, views and controllers ([Angular docs - Controllers](ht
 - [ ] Run `bower install` to install browser-side dependencies
 - [ ] Run `npm start` to start your server. Open your browser to the following address:
 ```
-localhost:3000
+http://localhost:3000
 ```
 
 ### Testing
@@ -110,6 +110,7 @@ Write a JS file with a new Angular module that contains an **element directive**
 ### Extension Challenges
 - [ ] Replace with ngRoute with [ui-router](https://github.com/angular-ui/ui-router).
 - [ ] Support [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) in your messaging platform. Have messages containing markdown render to HTML on your page.
+- [ ] Have the messages list update with new messages every 3 seconds.
 - [ ] Use `ngAnimate` to have a "fade" effect when you transition between pages.
 
 ## Additional Links and Resources
