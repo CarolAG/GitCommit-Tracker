@@ -14,13 +14,13 @@ In this unit you will be building a full MVC-style frontend web application to d
 
 ### What is a framework?
 
-Developing modern front-end web applications requires us to manage complex patterns of data on the front-end. The data (for example, the number of favorites on a tweet, whether a button has been selected or not) constantly change as new information becomes available from the server or as users interact with the data. Frameworks give us the structure to more easily design applications that handle this complexity. 
+Developing modern front-end web applications requires us to manage complex patterns of data on the front-end. The data (for example, the number of favorites on a tweet, whether a button has been selected or not) constantly change as new information becomes available from the server or as users interact with the data. Frameworks give us the structure to more easily design applications that handle this complexity.
 
 ### What is Angular?
 
 Angular is the currently the most popular front-end JavaScript framework using the Model-View-Controller pattern. [Coding Horror - Understanding MVC](http://blog.codinghorror.com/understanding-model-view-controller/)
 
-Angular uses [two-way data binding](https://docs.angularjs.org/tutorial/step_04) to ensure that any data-related changes affecting the underlying data model immediately update the relevant view or views (the UI that the user interacts with). Any changes to the view (for example by a user) immediately updates the relevant data model. 
+Angular uses [two-way data binding](https://docs.angularjs.org/tutorial/step_04) to ensure that any data-related changes affecting the underlying data model immediately update the relevant view or views (the UI that the user interacts with). Any changes to the view (for example by a user) immediately updates the relevant data model.
 
 ![](https://www.dropbox.com/s/lj2013fj1e8c213/Screenshot%202015-10-26%2008.09.55.png?dl=1)
 
@@ -72,7 +72,7 @@ open http://localhost:3000/
 ### Factories
 - [ ] Create a separate module named `Codesmith.UserFactory` (place inside `./client/factories/userFactory.js`)
 - [ ] Create a factory named `UserFactory` inside the `Codesmith.UserFactory` module. This will return an object with a `name` and `age` property, which should be equal to your name and age.
-- [ ] Make sure this new Factory is included by a `<script>` tag and added to the dependencies. Which module should be dependant on this factory? Is it `myApp`?
+- [ ] Make sure this new Factory is included by a `<script>` tag and added to the dependencies. Which module should be dependent on this factory? Is it `myApp`?
 - [ ] Inject `UserFactory` inside `AboutController`.
 - [ ] Add a `ng-submit` directive to the <form> on the `about.html` partial
 - [ ] Add a function called `save` in `AboutController` that, when submitted, saves the `name` inside the `UserFactory` object.
@@ -87,20 +87,22 @@ http://slack-server.elasticbeanstalk.com/messages
 ```
 - [ ] Inside the `MessageFactory`, create a method called `fetch` that makes a GET request to the API. The returned object should be the promise object returned from the `$http` request.
 - [ ] Inject this factory into the `HomeController`.
-- [ ] When the user visits the home page, get the messages and store the array of messages inside the `messages` property of the `HomeController` scope.
+- [ ] When the user visits the home page, the `HomeController` should get the messages and use the promise to store the array of messages inside the `messages` property of the `HomeController` scope.
 - [ ] Use the `ng-repeat` directive to display all the messages in the `home` partial
-- [ ] Add a text input to this page which will be used to post a new message to the API. When submitted, have the `HomeController` get the new message from this input and the name (created_by) from the UserFactory and then post this info to the API.
+- [ ] Add a `post` method to your factory which will make a post request to messages. This should also return the promise.
+- [ ] Add a text input to this page which will be used to post a new message to the API. When submitted, have the `HomeController` get the new message from this input and call the `post` method passing the new message as an argument. (Don't forget to send the name too).
 - [ ] Be sure to add your new message to the `messages` property and update the page with your message.
 
 ### Making a "smart" Angular application
 - [ ] Add a dropdown menu that enables the user to sort the data by different fields. This can be done with plain old JavaScript, but there is a cleaner way! Look up angular filters.
-- [ ] Add a search bar that can show only the messages that match the search phrase. 
+- [ ] Add a search bar that can show only the messages that match the search phrase.
 
 ### Connect to your custom API.
 Many APIs have Angular plugins (a.k.a. modules) that let Angular apps use them very easily. Its ease of use should be on par with libraries like ng-route. All it takes is 3 simple steps:
   1. Include your JS file with a `<script>` tag.
   2. Add your module to their app's dependencies.
   3. Start using this module's directives and services.
+
 Write a JS file with a new Angular module that contains an **element directive** (similar to a React component). Demonstrate its use by showing it in `myApp`. Create a new view for your API that shows styled data on this view. To be clear, all that should be required to get your API's data into `myApp` is these three steps:
   1. Include your JS file with a `<script>` tag ini `index.html`.
   2. Add the new module to `myApp` dependencies.
