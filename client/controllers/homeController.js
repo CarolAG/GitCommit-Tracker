@@ -1,6 +1,6 @@
-var app = angular
-  .module('Codesmith.HomeController',['ngRoute'])
-  .controller('HomeController', HomeController)
+angular
+  .module('Codesmith.HomeController', ['ngRoute'])
+  .controller('HomeController', HomeController);
 
 
 function HomeController($scope) {
