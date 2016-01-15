@@ -72,7 +72,7 @@ open http://localhost:3000/
 ### Factories
 - [ ] Create a separate module named `Codesmith.UserFactory` (place inside `./client/factories/userFactory.js`)
 - [ ] Create a factory named `UserFactory` inside the `Codesmith.UserFactory` module. This will return an object with a `name` and `age` property, which should be equal to your name and age.
-- [ ] Make sure this new Factory is included by a `<script>` tag and added to the dependencies.
+- [ ] Make sure this new Factory is included by a `<script>` tag and added to the dependencies. Which module should be dependant on this factory? Is it `myApp`?
 - [ ] Inject `UserFactory` inside `AboutController`.
 - [ ] Add a `ng-submit` directive to the <form> on the `about.html` partial
 - [ ] Add a function called `save` in `AboutController` that, when submitted, saves the `name` inside the `UserFactory` object.
