@@ -111,7 +111,7 @@ Write a JS file with a new Angular module that contains an **element directive**
 
 ### Extension Challenges
 - [ ] Replace with ngRoute with [ui-router](https://github.com/angular-ui/ui-router).
-- [ ] Support [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) in your messaging platform. Have messages containing markdown render to HTML on your page.
+- [ ] Support [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) in your messaging platform. Have messages containing markdown render to HTML on your page. You'll need to compile it to HTML and then render it. Check out [MarkdownJs](https://github.com/evilstreak/markdown-js) and Angular's [$sce service](https://docs.angularjs.org/api/ng/service/$sce).
 - [ ] Have the messages list update with new messages every 3 seconds.
 - [ ] Use `ngAnimate` to have a "fade" effect when you transition between pages.
 
