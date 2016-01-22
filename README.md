@@ -94,7 +94,7 @@ http://slack-server.elasticbeanstalk.com/messages
 - [ ] Be sure to add your new message to the `messages` property and update the page with your message.
 
 ### Making a "smart" Angular application
-- [ ] Add a dropdown menu that enables the user to sort the data by different fields. This can be done with plain old JavaScript, but there is a cleaner way! Look up angular filters.
+- [ ] Add a dropdown menu that enables the user to sort the data by different fields. This can be done with plain old JavaScript, but there is a cleaner way! Look up [Angular filters](https://docs.angularjs.org/guide/filter).
 - [ ] Add a search bar that can show only the messages that match the search phrase.
 
 ### Connect to your custom API.
