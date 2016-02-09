@@ -1,7 +1,11 @@
 <h1>About</h1>
 
-<form>
-  <input type="text"></input>
+<form ng-submit="save()">
+  <input type="text" ng-model="name"></input>
   {{name}}
-  <button type="submit">Save</button>
+  <input type="text" ng-model="age"></input>
+  {{age}}
+  <button type="submit" >Save</button>
 </form>
+
+<a ng-href="\#/">Home</a>

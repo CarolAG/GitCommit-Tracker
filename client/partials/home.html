@@ -1,3 +1,19 @@
 <h1>Home</h1>
-{{unit}}
+{{name}}
 
+<form ng-submit="post()">
+  <input type="text" ng-model="author"></input>
+  <input type="text" ng-model="currpost"></input>
+  <button type="submit" >Submit</button>
+</form>
+
+<form class="form-inline">
+  <select ng-model="usersort">
+  <input ng-model="query" type="text" placeholder="Filter by">
+</form>
+
+<ul ng-repeat="msg in messages| filter:query | orderBy: usersort">
+  <li>{{msg.created_by}}: {{msg.message}}</li>
+</ul>
+
+<a ng-href="\#/about">About</a>
