@@ -1,20 +1,21 @@
 angular
-  .module('Codesmith.HomeController', ['ngRoute', 'Codesmith.UserFactory', 'Codesmith.MessageFactory'])
+  .module('Codesmith.HomeController', ['ngRoute', 'Codesmith.UserFactory', 'Codesmith.MessageFactory', 'Codesmith.messages'])
   .controller('HomeController', HomeController)
 
 
-  function HomeController($scope, UserFactory, MessageFactory) {
+  function HomeController($interval, $scope, UserFactory, MessageFactory) {
     MessageFactory.fetch().then(function(response) {
-      $scope.messages = response.data.slice(-35);
+        $scope.messages = response.data.reverse().slice(-35);
     });
+
+    $interval(function() { return MessageFactory.fetch().then(function(response) {
+        $scope.messages = response.data.reverse().slice(-35);
+      })
+    }, 3000);
     $scope.name = UserFactory.name;
     $scope.age = UserFactory.age;
-    $scope.usersort = '-created_by';
+    $scope.usersort = "-created_at";
 
-
-    // $scope.post = function(){
-    //   MessageFactory.post
-    // }
     $scope.post = function() {
       var message = {
         created_by: $scope.author,

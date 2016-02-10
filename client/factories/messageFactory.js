@@ -2,7 +2,7 @@ angular
 .module('Codesmith.MessageFactory', [])
   .factory('MessageFactory', MessageFactory)
 
-  function MessageFactory($http) {
+function MessageFactory($interval, $http) {
     return {
         fetch: function() {
           return $http.get('http://slack-server.elasticbeanstalk.com/messages')

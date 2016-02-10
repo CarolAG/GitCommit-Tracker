@@ -3,6 +3,7 @@ var app = angular
     'ngRoute',
     'Codesmith.HomeController',
     'Codesmith.AboutController',
+    'Codesmith.messages',
   ]);
 
 app.config(configFunction);
@@ -18,4 +19,5 @@ function configFunction($routeProvider, $locationProvider) {
       templateUrl: './partials/about.html',
       controller: 'AboutController'
     });
+
 }

@@ -7,12 +7,20 @@
   <button type="submit" >Submit</button>
 </form>
 
+<messages></messages>
+
+</div>
+
 <form class="form-inline">
-  <select ng-model="usersort">
-  <input ng-model="query" type="text" placeholder="Filter by">
+  <select ng-model="usersort" >
+    <option value="created_at">Reverse Time</option>
+    <option value="-created_by">Descending</option>
+    <option value="created_by">Ascending</option>
+  </select>
+  <input ng-model="query" type="text" placeholder="Search messages">
 </form>
 
-<ul ng-repeat="msg in messages| filter:query | orderBy: usersort">
+<ul ng-repeat="msg in messages| filter:{message:query} | orderBy: usersort">
   <li>{{msg.created_by}}: {{msg.message}}</li>
 </ul>
 
