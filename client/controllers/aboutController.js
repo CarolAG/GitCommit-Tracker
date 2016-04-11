@@ -1,13 +1,13 @@
 angular
-.module('Codesmith.AboutController', ['ngRoute', 'Codesmith.UserFactory'])
+.module('Github.AboutController', ['ngRoute', 'Github.MyCommitsFactory'])
   .controller('AboutController', AboutController)
 
 
-  function AboutController($scope, UserFactory) {
-    $scope.name = UserFactory.name;
-    $scope.age = UserFactory.age;
-    $scope.save = function() {
-      UserFactory.name = $scope.name;
-      UserFactory.age = $scope.age;
-    }
+  function AboutController($scope, MyCommitsFactory) {
+      // $scope.name = MyCommitsFactory.project;
+      // $scope.age = MyCommitsFactory.language;
+      // // $scope.save = function() {
+      // //   UserFactory.name = $scope.name;
+      // //   UserFactory.age = $scope.age;
+      // // }
   }

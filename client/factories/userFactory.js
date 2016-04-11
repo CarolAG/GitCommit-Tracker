@@ -1,10 +1,21 @@
 angular
-.module('Codesmith.UserFactory', [])
-  .factory('UserFactory', UserFactory)
+.module('Github.MyCommitsFactory', [])
+  .factory('MyCommitsFactory', MyCommitsFactory)
 
-  function UserFactory() {
+  function MyCommitsFactory($interval, $http) {
     return {
-      name: "Carol",
-      age: 25
+      fetch: function(owner, repo) {
+         console.log('owner',owner);
+        console.log('repo',repo);
+        return $http.get('https://api.github.com/repos/' + owner +'/' + repo +'/commits')
+      }
     }
   };
+
+
+  
+// GET /search/code
+//https://api.github.com/search/code?q=addClass+in:file+language:js+repo:jquery/jquery
+
+ // /repos/:owner/:repo/commits
+ // https://api.github.com/repos/carolag/Getty-Hunt/commits

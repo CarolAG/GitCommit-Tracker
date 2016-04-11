@@ -1,9 +1,10 @@
 var app = angular
   .module('myApp', [
     'ngRoute',
-    'Codesmith.HomeController',
-    'Codesmith.AboutController',
-    'Codesmith.messages',
+    'Github.HomeController',
+    'Github.AboutController',
+    'Github.myAccountController',
+    'ngAnimate'
   ]);
 
 app.config(configFunction);
@@ -11,13 +12,17 @@ app.config(configFunction);
 function configFunction($routeProvider, $locationProvider) {
 
   $routeProvider
-    .when('/', {
+    .when('/home', {
       templateUrl: './partials/home.html',
       controller: 'HomeController'
     })
-    .when('/about', {
+    .when('/', {
       templateUrl: './partials/about.html',
       controller: 'AboutController'
+    })
+    .when('/myaccount', {
+      templateUrl: './partials/myAccount.html',
+      controller: 'myAccountController'
     });
 
 }

@@ -1,3 +1,160 @@
+html{
+  background-color: #2e226c;
+  background-image: url("octoear.jpg");
+  background-attachment: fixed;
+}
+body{
+background-image: url("octonaut.jpg");
+background-repeat: repeat-x;
+background-attachment: fixed;
+ background-size: 133%;
+ z-index: -1;
+ margin-top: -21px;
+ color: white ;
+ font-family: Avenir Next Condensed;
+ letter-spacing: .7px;
+ background-color: black;
+
+}
+
 .container {
+  background-image: url("octonaut.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 133%;
   text-align: center;
+  background-color: #69328d;
+  z-index: 1;
+
+}
+.title{
+  padding-top: 340px;
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+
+}
+#title{
+  z-index: 1;
+  color: white;
+}
+#homelink{
+  z-index: 1;
+  padding-top: 90px;
+  font-size: 50px;
+  padding-top: 30px;
+  color: white;
+}
+#containerA{
+  height: 60px;
+  width:70px;
+  display: block;
+  position: absolute;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+#lookupFactory{
+  font-size: 45px;
+  font-weight: 700;
+  color: #C3CFFF;
+  font-family: Avenir Next Condensed;
+  letter-spacing: 3px;
+
+}
+
+.lookupFactory{
+  padding-top: 40px;
+}
+
+.projectSearch{
+  text-align: left;
+  margin-bottom: : 10px;
+  font-size: 17px;
+
+}
+.button{
+  background: red;
+}
+
+.lookupView{
+  background: green;
+  width: 350px;
+}
+.projects{
+  text-align: left;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  height: 120px;
+  background-color: purple;
+  width: 350px;
+}
+
+/*.commitsInProject{
+  text-align: center;
+}*/
+
+#containerB{
+  height: 100px;
+  width: 400px;
+  display: inline-block;
+  position: absolute;
+  padding-top: 10px;
+}
+
+.numberofCommits{
+  color: white;
+  font-weight: bold;
+}
+
+.example-animate-container {
+  background:black;
+  border:2px solid black;
+  list-style:none;
+  font-size: 17px;
+  font-family: Avenir Next Condensed;
+  margin:50;
+  padding:0 50px;
+}
+
+.animate-repeat {
+  line-height:30px;
+  list-style:none;
+  box-sizing:border-box;
+}
+
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave {
+  transition:all linear 0.7s;
+}
+
+.animate-repeat.ng-leave.ng-leave-active,
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter {
+  opacity:0;
+  max-height:0;
+}
+
+.animate-repeat.ng-leave,
+.animate-repeat.ng-move.ng-move-active,
+.animate-repeat.ng-enter.ng-enter-active {
+  opacity:1;
+  max-height:70px;
+}
+
+
+
+#myaccount{
+  color: white;
+}
+.myAccountTitle{
+  color: white;
+  z-index: 1;
+}
+
+
+form.ng-pristine.ng-valid.ng-scope {
+  padding-top: 200px;
 }

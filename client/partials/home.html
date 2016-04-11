@@ -1,15 +1,80 @@
-<h1>Home</h1>
-{{name}}
+<div id = 'lookupFactory' class = 'lookupFactory'>GitHub Lookup Factory</div>
+<a ng-href="\#/myaccount" id ='myaccount'>My Account</a>
 
-<form ng-submit="post()">
-  <input type="text" ng-model="author"></input>
-  <input type="text" ng-model="currpost"></input>
-  <button type="submit" >Submit</button>
+
+<div id = 'containerA'>
+  <form ng-submit="fetch()" class ='projectSearch'>
+    <input type="text" placeholder= 'Look up a project' ng-model="project"></input>
+    <input type="text" placeholder= 'What language' ng-model="language"></input>
+    <button type="submit"  class = 'button'>Submit</button>
+  </form>
+
+  <div>HowMany: <input ng-model="quantity"></div>
+  <div ng-repeat="proj in projectLookups | limitTo:quantity" class = 'lookupView'>
+    <div class = 'projects'>
+      <div> {{proj.name}}</div>
+      <div>🌟 {{proj.stargazers_count}}</div>
+      <div> See This Project: {{proj.html_url}}</div>
+      <div>Clone this Project: {{proj.clone_url}}</div>
+    </div>
+  </div>
+</div>
+
+
+<div id = 'containerB'>
+<form ng-submit="retrieve()" class ='commitsSearx'>
+  <input type="search" placeholder= 'Owner' ng-model="owner"></input>
+  <input type="search" placeholder= 'Repository' ng-model="repo"></input>
+  <button type="submit"  class = 'commitsbutton'>Submit</button>
+  <div class = 'numberofCommits'>I have {{commits.length}} commits. They are:</div>
+  <input type="search" ng-model="q" placeholder="filter commits..." />
 </form>
 
-<messages></messages>
-
+<div>
+<ul class="example-animate-container">
+ <li class="animate-repeat" ng-repeat="resp in commits| filter:q as results">
+   [{{$index + 1}}] {{resp.commit.message}} on {{(resp.commit.author.date).slice(0,10)}}
+  </li>
+  <li class="animate-repeat" ng-if="results.length == 0">
+     <strong>No results found...</strong>
+   </li>
+</ul>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div ng-repeat="resp in commits">
+  <div class = 'commitsInProject'>
+    <div> {{resp.commit.message}}
+    </div>
+  </div>
+</div> -->
+
+<!-- put a link elsewhere -->
+<!-- <a ng-href="\#/about">About</a> -->
+
+
+
+
+
+
+<!-- <form ng-submit="fetch()">
+  <input type="text" ng-model="project"></input>
+  <input type="text" ng-model="language"></input>
+  <button type="submit" >Submit</button>
+</form> -->
+
+<!-- <messages></messages> -->
+
+<!-- </div>
 
 <form class="form-inline">
   <select ng-model="usersort" >
@@ -18,10 +83,4 @@
     <option value="created_by">Ascending</option>
   </select>
   <input ng-model="query" type="text" placeholder="Search messages">
-</form>
-
-<ul ng-repeat="msg in messages| filter:{message:query} | orderBy: usersort">
-  <li>{{msg.created_by}}: {{msg.message}}</li>
-</ul>
-
-<a ng-href="\#/about">About</a>
+</form> -->
